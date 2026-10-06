@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aplicação recebida · Florida Funding</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#16325c">
+<link rel="icon" href="img/logo-icone.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+<!-- META PIXEL: colar aqui (mesmo bloco da aplicacao.html, trocando os eventos por:
+     fbq('track','PageView'); fbq('track','Lead');  ) -->
+<style>
+.thanks{max-width:640px;margin:0 auto;padding:56px 16px 72px;text-align:center}
+.thanks .big{width:88px;height:88px;border-radius:50%;background:var(--ok);display:grid;place-items:center;margin:0 auto 20px;color:#fff}
+.thanks .big svg{width:44px;height:44px}
+.thanks h1{font-size:clamp(30px,6vw,44px);margin:0 0 12px}
+.next{list-style:none;padding:0;margin:28px 0;text-align:left;display:flex;flex-direction:column;gap:12px}
+.next li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.next b{display:block}
+.ref{color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header class="top"><div class="in"><a class="logo" href="index.html"><img src="img/logo-icone.png" alt="" width="30" height="30" style="vertical-align:middle;border-radius:8px;margin-right:8px">Florida <span>Funding</span></a><nav aria-label="Principal"><a class="pill" href="https://wa.me/14073076425">WhatsApp</a></nav></div></header>
+
+<main class="thanks">
+  <div class="big" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></svg></div>
+  <h1>Recebemos sua aplicação</h1>
+  <p class="lead" style="margin:0 auto">Obrigado! Uma pessoa da equipe vai falar com você pelo WhatsApp em até 1 dia útil.</p>
+  <p class="ref" id="ref"></p>
+  <ol class="next">
+    <li><b>1. Conferimos os documentos</b>Se faltar algo, a gente avisa no WhatsApp.</li>
+    <li><b>2. O parceiro financeiro analisa</b>Com base no faturamento dos últimos 4 meses.</li>
+    <li><b>3. Você recebe a proposta</b>Com o valor total a devolver. Só assina se fizer sentido.</li>
+  </ol>
+  <div class="ctas" style="justify-content:center">
+    <a class="btn wa" href="https://wa.me/14073076425">Falar no WhatsApp</a>
+    <a class="btn soft" href="index.html">Voltar ao início</a>
+  </div>
+</main>
+
+<footer class="foot"><div class="in"><div class="cols"><div><b>Florida Funding</b><br><a href="mailto:contato@floridafundingusa.com">contato@floridafundingusa.com</a></div><nav aria-label="Rodapé"><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a></nav></div></div></footer>
+<script>
+(function(){var r=new URLSearchParams(location.search).get("ref");if(r&&/^[a-f0-9-]{4,12}$/i.test(r))document.getElementById("ref").textContent="Número do pedido: "+r.toUpperCase()})();
+</script>
+</body>
+</html>

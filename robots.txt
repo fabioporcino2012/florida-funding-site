@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /aplicacao.html
+Disallow: /obrigado.html
+Disallow: /backend/
+
+Sitemap: https://floridafundingusa.com/sitemap.xml

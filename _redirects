@@ -1,0 +1,6 @@
+# Rede de segurança: se a pasta inteira for enviada por engano, estes arquivos internos não ficam públicos.
+# (O certo é publicar só a pasta gerada por ./preparar-deploy.sh — ver README.md.)
+/backend/*  /index.html  404
+/README.md  /index.html  404
+/preparar-deploy.sh  /index.html  404
+/check_links.py  /index.html  404
